@@ -167,3 +167,90 @@ nums.sort(function (a, b) {
   return b - a;
 });
 console.log(nums);*/
+
+// foreach
+//let nums = [3, 5, 7, 9, 3, 2];
+
+/*
+nums.forEach(function (num) {
+  console.log(num);
+});
+*/
+
+/*
+let sum = 0;
+nums.forEach(function (num) {
+  sum += num;
+});
+console.log(sum);
+*/
+
+/*
+nums.forEach(function (num, i) {
+  console.log(`Элемент массива: ${num}`);
+  console.log(`Индекс: ${i}`);
+});
+*/
+
+/*
+nums.forEach(function (num, i, arr) {
+  console.log(`Элемент массива: ${num}`);
+  console.log(`Индекс: ${i}`);
+  console.log(arr);
+});
+*/
+
+// стрелочные функции
+// let sayHello = function () {
+//   console.log("Hello");
+// };
+
+// let sayHello = () => {
+//   console.log("Hello");
+// };
+
+/*
+nums.forEach((num) => {
+  console.log(num);
+});
+*/
+/*
+nums.forEach((num) => console.log(num));
+*/
+
+//let pets = ["cat", "dog", "bat", "mouse", "pig", "goat", "sheep", "cow", "chicken", "camel"];
+/*
+let petsStr = pets.forEach(function (pet) {
+  return `<p>${pet}</p>`;
+});
+
+console.log(petsStr);
+*/
+
+// map
+/*
+let newPets = pets.map(function (pet) {
+  return pet;
+});
+console.log(newPets);
+*/
+
+/*
+// получаем МАССИВ заголовков
+let newPets = pets.map(function (pet, i) {
+  return `<h2 class="pet-${i + 1}">${pet}</h2>`;
+});
+console.log(newPets);
+console.log(newPets.join(""));
+document.write(newPets.join(""));
+*/
+
+/*
+let newPets = pets.map(function (pet, i) {
+  return pet.toUpperCase();
+});
+console.log(newPets);
+*/
+
+//console.log(pets.toUpperCase());
+//console.log(pets);
