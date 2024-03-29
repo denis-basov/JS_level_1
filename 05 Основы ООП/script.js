@@ -72,7 +72,7 @@ class Student {
 let student1 = new Student("Анна", "Петрова", 22);
 let student2 = new Student("Светлана", "Иванова", 19);
 
-console.log(student1);
+//console.log(student1);
 //console.log(student2);
 
 // console.log(`Имя: ${student1.printName()}!`);
@@ -90,11 +90,65 @@ class NewStudent extends Student {
 
   // переопределяем метод родительского класса
   getUserInfo() {
+    //return `${super.getUserInfo()} Номер школы: ${this.schoolNumber}.</h1>`;
     return `<h1>Имя: ${this.fName}. Фамилия: ${this.lName}. Возраст: ${this.age} лет.
     Номер школы: ${this.schoolNumber}.</h1>`;
   }
 }
 
 let student3 = new NewStudent("Сергей", "Иванов", 15, 43);
-console.log(student3);
-document.write(student3.getUserInfo());
+//console.log(student3);
+//document.write(student3.getUserInfo());
+/*
+let students = [student1, student2, student3];
+console.log(students);
+
+students.forEach(function (student) {
+  document.write(student.getUserInfo());
+});
+*/
+
+/**
+ * switch / case
+ */
+
+/*
+let rating = 3;
+
+switch (rating) {
+  case 1:
+    console.log("Плохой рейтинг");
+    break;
+  case 2:
+    console.log("Нормальный рейтинг");
+    break;
+  case 3:
+    console.log("Отличный рейтинг");
+    break;
+  default:
+    console.log("Некорректное значение");
+}
+*/
+
+/*
+let arr = ["Киви", "Ананас", "cat", "dog", "camel", "duck"];
+
+arr.forEach(function (arrEl) {
+  switch (arrEl) {
+    case "Киви":
+    case "Ананас":
+      console.log("Фрукт");
+      break;
+    case "cat":
+    case "dog":
+      console.log("Домашнее животное");
+      break;
+    case "camel":
+    case "duck":
+      console.log("Дикое животное");
+      break;
+    default:
+      console.log("Элемент не распознан");
+  }
+});
+*/
